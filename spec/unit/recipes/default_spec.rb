@@ -25,5 +25,11 @@ describe 'codenamephp_workstation_php::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'includes recipes' do
+      expect(chef_run).to include_recipe('codenamephp_workstation_php::php')
+      expect(chef_run).to include_recipe('codenamephp_workstation_php::apache2')
+      expect(chef_run).to include_recipe('codenamephp_workstation_php::phpmyadmin')
+    end
   end
 end
