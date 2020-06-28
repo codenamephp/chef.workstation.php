@@ -12,3 +12,7 @@ source_url 'https://github.com/codenamephp/chef.workstation.php'
 
 supports 'debian'
 
+depends 'codenamephp_apache2', '~> 2.0'
+depends 'codenamephp_docker', '~> 2.0'
+depends 'codenamephp_mysql', '~> 2.0'
+depends 'codenamephp_php', '~> 3.3'
