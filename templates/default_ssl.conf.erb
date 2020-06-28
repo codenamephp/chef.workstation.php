@@ -1,0 +1,10 @@
+<VirtualHost *:443>
+    DocumentRoot /var/www/html
+
+    ErrorLog /var/log/error.log
+    CustomLog /var/log/access.log combined
+
+    SSLEngine on
+    SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem
+    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+</VirtualHost>
