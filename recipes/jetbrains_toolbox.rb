@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Recipe:: default
+# Recipe:: jetbrains_toolbox
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -18,7 +18,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe '::php'
-include_recipe '::apache2'
-include_recipe '::phpmyadmin'
-include_recipe '::jetbrains_toolbox'
+codenamephp_dev_jetbrains_toolbox 'install jetbrains-toolbox'

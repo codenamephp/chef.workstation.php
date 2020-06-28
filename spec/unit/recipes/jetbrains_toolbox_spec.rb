@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Recipe:: default
+# Spec:: jetbrains_toolbox
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -18,7 +18,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe '::php'
-include_recipe '::apache2'
-include_recipe '::phpmyadmin'
-include_recipe '::jetbrains_toolbox'
+require 'spec_helper'
+
+describe 'codenamephp_workstation_php::jetbrains_toolbox' do
+  context 'When all attributes are default' do
+    it 'converges successfully' do
+      expect { chef_run }.to_not raise_error
+    end
+
+    it 'installs toolbox with resource' do
+      expect(chef_run).to install_codenamephp_dev_jetbrains_toolbox('install jetbrains-toolbox')
+    end
+  end
+end
