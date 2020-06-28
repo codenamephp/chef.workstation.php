@@ -14,7 +14,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[codenamephp_workstation_php::phpmyadmin]
       - recipe[codenamephp_workstation_php::php]
       - recipe[codenamephp_workstation_php::apache2]
     verifier:
