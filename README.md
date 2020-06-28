@@ -1,10 +1,7 @@
-# Chef Cookbook
-%%BUILD_BADGE%%
+# Chef Workstation PHP
+[![Build Status](https://travis-ci.com/codenamephp/chef.workstation.php.svg?branch=master)](https://travis-ci.com/codenamephp/chef.workstation.php)
 
-To get started, lookup all the %%PLACEHOLDERS%% and replace them with the actual values. Also add the encoded
-codenamephp.pem and slack room to .travis.yml
-
-To get started with the cookbook, use chef generate -I apachev2 -C CodenamePHP [recipe, resource, ...]
+Sets up a PHP workstation including PHPStorm, configs, apache2, ...
 
 ## Requirements
 
@@ -23,7 +20,7 @@ To get started with the cookbook, use chef generate -I apachev2 -C CodenamePHP [
 Add the cookbook to your Berksfile:
 
 ```
-cookbook '%%COOKBOOK_NAME%%'
+cookbook 'codenamephp_workstation_php'
 ```
 
 Add the cookbook to your runlist, e.g. in a role:
@@ -35,7 +32,7 @@ Add the cookbook to your runlist, e.g. in a role:
   "chef_type": "role",
   "json_class": "Chef::Role",
   "run_list": [
-	  "recipe[%%COOKBOOK_NAME%%]"
+	  "recipe[codenamephp_workstation_php]"
   ]
 }
 ```

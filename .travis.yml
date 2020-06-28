@@ -22,7 +22,7 @@ env:
 install:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(chef shell-init bash)"
-  - '%%PEM_DECRYPT%%'
+  - openssl aes-256-cbc -K $encrypted_0c84fc16f455_key -iv $encrypted_0c84fc16f455_iv -in codenamephp.pem.enc -out codenamephp.pem -d
 
 script:
   - chef exec foodcritic .
@@ -46,6 +46,6 @@ deploy:
 notifications:
   slack:
     rooms:
-      - secure: '%%SLACK_SECRET%%'
+      - secure: "GvVkBxwZVegAYT8NJRfTcJTsokOCcEFYGmsrdFGgjI62g2xSEXPUO1JnIQt2dxEvVMBQL2vqPSkbXPyhRjgpfshifPvdp3Ep98aKqckitBT0mSEpEfBSuoVO55EPRoir4ux726az/ZU1Rfj2LJ8Bn7gOM6gwRU1DiAHGdTGhDpDskcF3HFBm0jNTY4COEfZGhmXYAfPJsut//sZaDWmrdlYJll0RBamS7XnZxaXPbOIYvw3w2Kx9ATHdyOKJVLvZ+OMFlWHLcdXx8UaVUCHVGqcgZjMdfK93mX4f/EDzkx8T8pgUYv2uZT4DkY3qb3/q9xvSrlpzKqaUGIkQp0ksFpNgu1KpNK319mlI6MeCdM5J/0zZ+ZmW9oPbXilORI7H84X1L9++olZldGUovBfr5I5xTWC9aHg0Ywh3TRkci+3xUZ+MMPzT0x0Ez04i1hJL6g8OZ0M7XqwYTwXrP9NySk3ERJPO5Q+S04ZRDWmY93NwZanZHHHGAXB4t43CmWctyJJ67CTqb1KKYyUNcrFJWCHFKXrLblhQLtp9yLrg8rDNPHa0z+l5ebJ1Fhl/dxI8Mti1op/apNEs6g7jaKkTPhaOfywdd/+ssqWxUOnlmGVVJ2TDqrXky15thi++UPm9AAZJDAqJQTOHZBGuphOTdxEwRbwKUZHU30mKTPZLva0="
     on_success: never
     on_failure: always
