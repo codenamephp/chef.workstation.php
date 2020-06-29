@@ -6,6 +6,16 @@ describe package('php7.4-cli') do
   it { should be_installed }
 end
 
+describe package('php7.4-fpm') do
+  it { should be_installed }
+end
+
+describe service('php7.4-fpm') do
+  it { should be_installed }
+  it { should be_enabled }
+  it { should be_running }
+end
+
 describe command('php --version') do
   its('stdout') { should match(/PHP 7\.4/) }
 end
