@@ -34,6 +34,11 @@ describe 'codenamephp_workstation_php::php' do
       expect(chef_run).to install_codenamephp_php_package('install php')
     end
 
+    it 'enables and starts php7.4-fpm' do
+      expect(chef_run).to start_service('php7.4-fpm')
+      expect(chef_run).to enable_service('php7.4-fpm')
+    end
+
     it 'installs composer' do
       expect(chef_run).to install_codenamephp_php_composer('install composer')
     end

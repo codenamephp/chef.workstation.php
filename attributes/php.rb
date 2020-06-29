@@ -3,7 +3,6 @@
 default['codenamephp']['workstation_php']['php']['additional_packages'] = [
   'php7.4-bcmath',
   'php7.4-curl',
-  'php7.3-fpm',
   'php7.4-gd',
   'php7.4-json',
   'php7.4-mbstring',

@@ -36,3 +36,6 @@ Add the cookbook to your runlist, e.g. in a role:
   ]
 }
 ```
+
+## PHP and Apache
+When PHP is installed, php-fpm is added automatically and the service is started. Therefore, Apache is installed with mpm_event.

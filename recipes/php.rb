@@ -22,7 +22,11 @@ codenamephp_php_sury_repository 'sury-php'
 
 codenamephp_php_package 'install php' do
   package_name 'php7.4-cli'
-  additional_packages node['codenamephp']['workstation_php']['php']['additional_packages']
+  additional_packages node['codenamephp']['workstation_php']['php']['additional_packages'] | ['php7.4-fpm']
+end
+
+service 'php7.4-fpm' do
+  action [:start, :enable]
 end
 
 codenamephp_php_composer 'install composer'
