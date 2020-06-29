@@ -26,7 +26,7 @@ codenamephp_php_package 'install php' do
 end
 
 service 'php7.4-fpm' do
-  action [:start, :enable]
+  action %i[start enable]
 end
 
 codenamephp_php_composer 'install composer'
