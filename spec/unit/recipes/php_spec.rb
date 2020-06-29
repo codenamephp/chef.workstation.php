@@ -61,7 +61,7 @@ describe 'codenamephp_workstation_php::php' do
 
     it 'installs php7.4 and additional packages' do
       expect(chef_run).to install_codenamephp_php_package('install php').with(
-        additional_packages: %w[package1 package2]
+        additional_packages: %w[package1 package2 php7.4-fpm]
       )
     end
   end
