@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Spec:: phpmyadmin
+# Spec:: docker
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -20,27 +20,18 @@
 
 require 'spec_helper'
 
-describe 'codenamephp_workstation_php::phpmyadmin' do
+describe 'codenamephp_workstation_php::docker' do
   context 'When all attributes are default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'sets up docker' do
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::docker')
+    it 'installs docker using resource' do
+      expect(chef_run).to install_codenamephp_docker_service('Install docker')
     end
 
-    it 'pulls the phpmyadmin image' do
-      expect(chef_run).to pull_docker_image('phpmyadmin').with(repo: 'phpmyadmin/phpmyadmin')
-    end
-
-    it 'runs the phpmyadmin container' do
-      expect(chef_run).to run_docker_container('phpmyadmin').with(
-        repo: 'phpmyadmin/phpmyadmin',
-        port: '8888:80',
-        env: ['PMA_HOST=172.17.0.1'],
-        restart_policy: 'always'
-      )
+    it 'installs docker-compose using resource' do
+      expect(chef_run).to install_codenamephp_docker_compose('Install docker-compose')
     end
   end
 end
