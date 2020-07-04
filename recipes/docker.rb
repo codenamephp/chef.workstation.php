@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Recipe:: phpmyadmin
+# Recipe:: docker
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -18,15 +18,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe 'codenamephp_workstation_php::docker'
-
-docker_image 'phpmyadmin' do
-  repo 'phpmyadmin/phpmyadmin'
-end
-
-docker_container 'phpmyadmin' do
-  repo 'phpmyadmin/phpmyadmin'
-  port '8888:80'
-  env 'PMA_HOST=172.17.0.1'
-  restart_policy 'always'
-end
+codenamephp_docker_service 'Install docker'
+codenamephp_docker_compose 'Install docker-compose'
