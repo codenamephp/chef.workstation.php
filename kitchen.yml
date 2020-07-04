@@ -18,7 +18,7 @@ suites:
       - recipe[codenamephp_workstation_php::php]
       - recipe[codenamephp_workstation_php::apache2]
       - recipe[codenamephp_workstation_php::jetbrains_toolbox]
-      - recipe[codenamephp_workstation_php::phpmyadmin]
+      - recipe[codenamephp_workstation_php::docker]
     verifier:
       inspec_tests:
         - test/integration/default
