@@ -14,7 +14,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[test]
       - recipe[codenamephp_workstation_php::php]
       - recipe[codenamephp_workstation_php::apache2]
       - recipe[codenamephp_workstation_php::jetbrains_toolbox]
