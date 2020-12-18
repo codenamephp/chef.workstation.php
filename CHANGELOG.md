@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Updated to codenamphp\_php 4.0 [\#7](https://github.com/codenamephp/chef.workstation.php/pull/7) ([bastianschwarz](https://github.com/bastianschwarz))
 - Added github workflows [\#6](https://github.com/codenamephp/chef.workstation.php/pull/6) ([bastianschwarz](https://github.com/bastianschwarz))
 
 ## [1.1.0](https://github.com/codenamephp/chef.workstation.php/tree/1.1.0) (2020-07-04)
