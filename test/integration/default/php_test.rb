@@ -22,7 +22,7 @@ end
 
 describe command('php -i') do
   its('stdout') { should match(/Development Aids =>.*enabled/) }
-  its('stdout') { should match(/Step Debugger =>.*enabled/) }
+  its('stdout') { should match(/Step Debugger =>.*disabled/) }
 end
 
 describe command('composer -v') do
