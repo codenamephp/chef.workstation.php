@@ -9,7 +9,7 @@ describe service('apache2') do
 end
 
 describe apache_conf do
-  its('Listen') { should eq %w[80 443] }
+  its('Listen') { should eq %w(80 443) }
 end
 
 describe http('http://localhost') do

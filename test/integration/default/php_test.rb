@@ -21,7 +21,8 @@ describe command('php --version') do
 end
 
 describe command('php -i') do
-  its('stdout') { should match(/xdebug support => enabled/) }
+  its('stdout') { should match(/Development Aids =>.*enabled/) }
+  its('stdout') { should match(/Step Debugger =>.*enabled/) }
 end
 
 describe command('composer -v') do

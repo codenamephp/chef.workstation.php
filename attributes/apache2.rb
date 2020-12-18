@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-default['codenamephp']['workstation_php']['apache2']['modules'] = %w[
+default['codenamephp']['workstation_php']['apache2']['modules'] = %w(
   headers
   deflate
   env
@@ -9,4 +9,4 @@ default['codenamephp']['workstation_php']['apache2']['modules'] = %w[
   remoteip
   rewrite
   ssl
-]
+)

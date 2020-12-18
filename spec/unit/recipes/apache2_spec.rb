@@ -40,7 +40,7 @@ describe 'codenamephp_workstation_php::apache2' do
   end
 
   context 'With custom modules' do
-    override_attributes['codenamephp']['workstation_php']['apache2']['modules'] = %w[mod1 mod2]
+    override_attributes['codenamephp']['workstation_php']['apache2']['modules'] = %w(mod1 mod2)
 
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
