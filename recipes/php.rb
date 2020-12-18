@@ -26,13 +26,13 @@ codenamephp_php_package 'install php' do
 end
 
 service 'php7.4-fpm' do
-  action %i[start enable]
+  action %i(start enable)
 end
 
 codenamephp_php_composer 'install composer'
 
 codenamephp_php_xdebug 'install xdebug' do
-  php_versions %w[7.4]
+  php_versions %w(7.4)
 end
 
 codenamephp_php_phive 'install phive'

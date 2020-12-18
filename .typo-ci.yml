@@ -6,7 +6,6 @@ dictionaries:
 excluded_files:
   - "*.enc"
   - ".typo-ci.yml"
-  - ".travis.yml"
   - "chefignore"
   - "Berksfile"
   - ".github/*"

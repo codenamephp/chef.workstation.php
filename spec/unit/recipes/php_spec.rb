@@ -44,7 +44,7 @@ describe 'codenamephp_workstation_php::php' do
     end
 
     it 'installs xdebug' do
-      expect(chef_run).to install_codenamephp_php_xdebug('install xdebug').with(php_versions: %w[7.4])
+      expect(chef_run).to install_codenamephp_php_xdebug('install xdebug').with(php_versions: %w(7.4))
     end
 
     it 'will install phive' do
@@ -53,7 +53,7 @@ describe 'codenamephp_workstation_php::php' do
   end
 
   context 'With custom php packages' do
-    override_attributes['codenamephp']['workstation_php']['php']['additional_packages'] = %w[package1 package2]
+    override_attributes['codenamephp']['workstation_php']['php']['additional_packages'] = %w(package1 package2)
 
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
@@ -61,7 +61,7 @@ describe 'codenamephp_workstation_php::php' do
 
     it 'installs php7.4 and additional packages' do
       expect(chef_run).to install_codenamephp_php_package('install php').with(
-        additional_packages: %w[package1 package2 php7.4-fpm]
+        additional_packages: %w(package1 package2 php7.4-fpm)
       )
     end
   end
