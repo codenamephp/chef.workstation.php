@@ -1,5 +1,5 @@
 # Chef Workstation PHP
-[![Build Status](https://travis-ci.com/codenamephp/chef.workstation.php.svg?branch=master)](https://travis-ci.com/codenamephp/chef.workstation.php)
+![CI](https://github.com/codenamephp/chef.workstation.php/workflows/CI/badge.svg)
 
 Sets up a PHP workstation including PHPStorm, configs, apache2, ...
 
