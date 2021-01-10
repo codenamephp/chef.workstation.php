@@ -18,21 +18,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-codenamephp_php_sury_repository 'sury-php'
+include_recipe '::docker'
 
-codenamephp_php_package 'install php' do
-  package_name 'php7.4-cli'
-  additional_packages node['codenamephp']['workstation_php']['php']['additional_packages'] | ['php7.4-fpm']
+docker_image 'php-dev' do
+  repo 'codenamephp/php.webdevops.php-dev'
 end
 
-service 'php7.4-fpm' do
-  action %i(start enable)
+docker_image 'php-dev:8.0' do
+  repo 'codenamephp/php.webdevops.php-dev'
+  tag '8.0'
 end
-
-codenamephp_php_composer 'install composer'
-
-codenamephp_php_xdebug 'install xdebug' do
-  php_versions %w(7.4)
-end
-
-codenamephp_php_phive 'install phive'

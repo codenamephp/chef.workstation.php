@@ -1,7 +1,7 @@
 # Chef Workstation PHP
 ![CI](https://github.com/codenamephp/chef.workstation.php/workflows/CI/badge.svg)
 
-Sets up a PHP workstation including PHPStorm, configs, apache2, ...
+Sets up a PHP workstation for PHP development with docker and PHPStorm.
 
 ## Requirements
 
@@ -36,6 +36,3 @@ Add the cookbook to your runlist, e.g. in a role:
   ]
 }
 ```
-
-## PHP and Apache
-When PHP is installed, php-fpm is added automatically and the service is started. Therefore, Apache is installed with mpm_event.
