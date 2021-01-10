@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/codenamephp/chef.workstation.php/tree/HEAD)
+
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/1.1.1...HEAD)
+
+**Merged pull requests:**
+
+- Removed php, apache and phpmyadmin recipes and pulling php8 docker images [\#11](https://github.com/codenamephp/chef.workstation.php/pull/11) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [1.1.1](https://github.com/codenamephp/chef.workstation.php/tree/1.1.1) (2020-12-18)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/1.1.0...1.1.1)
