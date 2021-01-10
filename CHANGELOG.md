@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/codenamephp/chef.workstation.php/tree/HEAD)
+## [2.0.0](https://github.com/codenamephp/chef.workstation.php/tree/2.0.0) (2021-01-10)
 
-[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/1.1.1...HEAD)
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/1.1.1...2.0.0)
 
 **Merged pull requests:**
 
