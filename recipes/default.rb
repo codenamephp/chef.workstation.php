@@ -19,6 +19,4 @@
 # limitations under the License.
 
 include_recipe '::php'
-include_recipe '::apache2'
-include_recipe '::phpmyadmin'
 include_recipe '::jetbrains_toolbox'
