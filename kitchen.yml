@@ -4,6 +4,7 @@ driver:
 
 provisioner:
   name: chef_solo
+  retries: 3
 
 verifier:
   name: inspec
