@@ -22,9 +22,11 @@ include_recipe '::docker'
 
 docker_image 'php-dev' do
   repo 'codenamephp/php.webdevops.php-dev'
+  retries 5
 end
 
 docker_image 'php-dev:8.0' do
   repo 'codenamephp/php.webdevops.php-dev'
   tag '8.0'
+  retries 5
 end
