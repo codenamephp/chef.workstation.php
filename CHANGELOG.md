@@ -15,6 +15,7 @@
 **Merged pull requests:**
 
 - Removed php, apache and phpmyadmin recipes and pulling php8 docker images [\#11](https://github.com/codenamephp/chef.workstation.php/pull/11) ([bastianschwarz](https://github.com/bastianschwarz))
+- \[CHANGELOG\] 1.1.0 [\#3](https://github.com/codenamephp/chef.workstation.php/pull/3) ([github-actions[bot]](https://github.com/apps/github-actions))
 
 ## [1.1.1](https://github.com/codenamephp/chef.workstation.php/tree/1.1.1) (2020-12-18)
 
@@ -32,10 +33,6 @@
 **Implemented enhancements:**
 
 - Updated to codenamephp\_docker 3.0 and added docker-compose [\#4](https://github.com/codenamephp/chef.workstation.php/pull/4) ([bastianschwarz](https://github.com/bastianschwarz))
-
-**Merged pull requests:**
-
-- \[CHANGELOG\] 1.1.0 [\#3](https://github.com/codenamephp/chef.workstation.php/pull/3) ([github-actions[bot]](https://github.com/apps/github-actions))
 
 ## [1.0.1](https://github.com/codenamephp/chef.workstation.php/tree/1.0.1) (2020-06-29)
 
