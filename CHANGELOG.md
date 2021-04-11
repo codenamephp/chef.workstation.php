@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased](https://github.com/codenamephp/chef.workstation.php/tree/HEAD)
+
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.1...HEAD)
+
+**Implemented enhancements:**
+
+- Install edge [\#20](https://github.com/codenamephp/chef.workstation.php/issues/20)
+
+**Merged pull requests:**
+
+- Bump dev-drprasad/delete-tag-and-release from v0.1.3 to v0.2.0 [\#19](https://github.com/codenamephp/chef.workstation.php/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump bobheadxi/deployments from v0.4.3 to v0.5.2 [\#18](https://github.com/codenamephp/chef.workstation.php/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [2.0.1](https://github.com/codenamephp/chef.workstation.php/tree/2.0.1) (2021-01-13)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.0...2.0.1)

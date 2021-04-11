@@ -14,3 +14,4 @@ supports 'debian'
 
 depends 'codenamephp_dev', '~> 3.0'
 depends 'codenamephp_docker', '~> 3.0'
+depends 'codenamephp_edge', '~> 1.0'
