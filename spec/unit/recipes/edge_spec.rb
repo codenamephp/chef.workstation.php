@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Recipe:: default
+# Spec:: jetbrains_toolbox
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -18,6 +18,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe '::php'
-include_recipe '::jetbrains_toolbox'
-include_recipe '::edge'
+require 'spec_helper'
+
+describe 'codenamephp_workstation_php::edge' do
+  context 'When all attributes are default' do
+    it 'converges successfully' do
+      expect { chef_run }.to_not raise_error
+    end
+
+    it 'installs toolbox with resource' do
+      expect(chef_run).to add_codenamephp_edge_apt_repository('Add apt repository')
+      expect(chef_run).to install_codenamephp_edge_package('Install edge')
+    end
+  end
+end
