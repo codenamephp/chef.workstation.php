@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.2...HEAD)
 
+**Implemented enhancements:**
+
+- Updated version of codenamephp\_dev to 4.0 which uses unified\_mode [\#30](https://github.com/codenamephp/chef.workstation.php/pull/30) ([bastianschwarz](https://github.com/bastianschwarz))
+
 **Merged pull requests:**
 
 - Bump bobheadxi/deployments from 0.5.2 to 0.6.0 [\#29](https://github.com/codenamephp/chef.workstation.php/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
