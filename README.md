@@ -7,11 +7,11 @@ Sets up a PHP workstation for PHP development with docker and PHPStorm.
 
 ### Supported Platforms
 
-- Debian Stretch
+- Debian Buster
 
 ### Chef
 
-- Chef 13.0+
+- Chef 15.3+
 
 ### Cookbook Depdendencies
 
