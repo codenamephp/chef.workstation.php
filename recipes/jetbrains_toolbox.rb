@@ -18,4 +18,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-codenamephp_dev_jetbrains_toolbox 'install jetbrains-toolbox'
+codenamephp_jetbrains_toolbox_app 'install jetbrains-toolbox'

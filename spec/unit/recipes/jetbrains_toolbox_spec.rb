@@ -27,7 +27,7 @@ describe 'codenamephp_workstation_php::jetbrains_toolbox' do
     end
 
     it 'installs toolbox with resource' do
-      expect(chef_run).to install_codenamephp_dev_jetbrains_toolbox('install jetbrains-toolbox')
+      expect(chef_run).to install_codenamephp_jetbrains_toolbox_app('install jetbrains-toolbox')
     end
   end
 end
