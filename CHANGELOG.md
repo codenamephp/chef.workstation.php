@@ -13,10 +13,6 @@
 - Bump bobheadxi/deployments from 0.5.2 to 0.6.0 [\#29](https://github.com/codenamephp/chef.workstation.php/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump tubone24/update\_release from 1.1.0 to 1.2.0 [\#25](https://github.com/codenamephp/chef.workstation.php/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 
-## [2.1.0](https://github.com/codenamephp/chef.workstation.php/tree/2.1.0) (2021-07-06)
-
-[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.2...2.1.0)
-
 ## [2.0.2](https://github.com/codenamephp/chef.workstation.php/tree/2.0.2) (2021-04-11)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.1...2.0.2)

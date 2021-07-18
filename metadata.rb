@@ -12,6 +12,6 @@ source_url 'https://github.com/codenamephp/chef.workstation.php'
 
 supports 'debian'
 
-depends 'codenamephp_dev', '~> 4.0'
+depends 'codenamephp_jetbrains_toolbox', '~> 1.0'
 depends 'codenamephp_docker', '~> 3.0'
 depends 'codenamephp_edge', '~> 1.0'
