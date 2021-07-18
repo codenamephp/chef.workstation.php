@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.0](https://github.com/codenamephp/chef.workstation.php/tree/2.2.0) (2021-07-18)
+
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.1.0...2.2.0)
+
+**Implemented enhancements:**
+
+- Switched from codenamephp\_dev to codenamephp\_jetbrains\_toolbox [\#32](https://github.com/codenamephp/chef.workstation.php/pull/32) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [2.1.0](https://github.com/codenamephp/chef.workstation.php/tree/2.1.0) (2021-07-06)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.0.2...2.1.0)
