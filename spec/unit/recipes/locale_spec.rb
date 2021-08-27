@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Spec:: default
+# Spec:: locale
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -20,19 +20,14 @@
 
 require 'spec_helper'
 
-describe 'codenamephp_workstation_php::default' do
+describe 'codenamephp_workstation_php::locale' do
   context 'When all attributes are default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'includes recipes' do
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::locale')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::timezone')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::php')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::jetbrains_toolbox')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::keyboard_layout')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::git')
+    it 'sets the locale' do
+      expect(chef_run).to update_locale('Set system locale').with(lang: 'de_DE.UTF-8')
     end
   end
 end

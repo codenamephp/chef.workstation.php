@@ -18,6 +18,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+include_recipe '::keyboard_layout'
+include_recipe '::locale'
+include_recipe '::timezone'
+include_recipe '::git'
 include_recipe '::php'
 include_recipe '::jetbrains_toolbox'
 include_recipe '::edge'

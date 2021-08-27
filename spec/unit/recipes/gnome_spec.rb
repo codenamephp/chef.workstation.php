@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Spec:: default
+# Spec:: gnome
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -20,19 +20,22 @@
 
 require 'spec_helper'
 
-describe 'codenamephp_workstation_php::default' do
+describe 'codenamephp_workstation_php::gnome' do
   context 'When all attributes are default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'includes recipes' do
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::locale')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::timezone')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::php')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::jetbrains_toolbox')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::keyboard_layout')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::git')
+    it 'installs gnome' do
+      expect(chef_run).to install_codenamephp_gnome_package('install gnome gui')
+    end
+
+    it 'sets the settings' do
+      expect(chef_run).to set_codenamephp_gnome_gsettings('Set display idle delay')
+    end
+
+    it 'sets the keyboard shortcuts' do
+      expect(chef_run).to set_codenamephp_gnome_keyboard_shortcut('Terminal')
     end
   end
 end
