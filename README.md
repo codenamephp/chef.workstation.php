@@ -3,36 +3,16 @@
 
 Sets up a PHP workstation for PHP development with docker and PHPStorm.
 
-## Requirements
-
-### Supported Platforms
-
-- Debian Buster
-
-### Chef
-
-- Chef 15.3+
-
-### Cookbook Depdendencies
-
 ## Usage
 
-Add the cookbook to your Berksfile:
+Intended use is in a wrapper cookbook where you can either include the default recipe or just the recipe parts. You will have to create
+users yourself.
 
-```
-cookbook 'codenamephp_workstation_php'
-```
+## What's included
 
-Add the cookbook to your runlist, e.g. in a role:
+The workstation is based on git and docker and also installs some other useful tools:
 
-
-```json
-{
-  "name": "default",
-  "chef_type": "role",
-  "json_class": "Chef::Role",
-  "run_list": [
-	  "recipe[codenamephp_workstation_php]"
-  ]
-}
-```
+- Docker, Docker-Compose and Docker image using codenamephp/php.webdevops.php-dev
+- Git
+- Jetbrains Toolbox for easy PHPStorm install
+- MS Edge as browser
