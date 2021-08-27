@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Recipe:: default
+# Spec:: keyboard_layout
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -18,7 +18,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe '::keyboard_layout'
-include_recipe '::php'
-include_recipe '::jetbrains_toolbox'
-include_recipe '::edge'
+require 'spec_helper'
+
+describe 'codenamephp_workstation_php::keyboard_layout' do
+  context 'When all attributes are default' do
+    it 'converges successfully' do
+      expect { chef_run }.to_not raise_error
+    end
+
+    it 'installs toolbox with resource' do
+      expect(chef_run).to update_codenamephp_keyboard_layout_manage('Update keyboard layout')
+    end
+  end
+end
