@@ -2,7 +2,7 @@
 
 #
 # Cookbook:: codenamephp_workstation_php
-# Spec:: default
+# Spec:: git
 #
 # Copyright:: 2020, CodenamePHP
 #
@@ -20,16 +20,14 @@
 
 require 'spec_helper'
 
-describe 'codenamephp_workstation_php::default' do
+describe 'codenamephp_workstation_php::git' do
   context 'When all attributes are default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'includes recipes' do
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::php')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::jetbrains_toolbox')
-      expect(chef_run).to include_recipe('codenamephp_workstation_php::git')
+    it 'installs git client' do
+      expect(chef_run).to install_codenamephp_git_client_package('Install git')
     end
   end
 end
