@@ -17,3 +17,13 @@ The workstation is based on git and docker and also installs some other useful t
 - Git
 - Jetbrains Toolbox for easy PHPStorm install
 - MS Edge as browser
+
+Optional:
+- Install gnome gui and set keyboard shortcuts
+
+## Attributes
+
+### Users
+ There is the `default['users'] = []` attribute that is used by different resources e.g. for setting keyboard shortcuts etc. The purpose for this is to have
+ multiple resources to configure the users the same way. You don't have to set this but it provides an easy way to just set an attribute and have users configured
+ without addtional cookbooks.
