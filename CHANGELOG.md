@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Added recipe for gnome gui [\#37](https://github.com/codenamephp/chef.workstation.php/pull/37) ([bastianschwarz](https://github.com/bastianschwarz))
 - Added recipes for timezone and locale [\#36](https://github.com/codenamephp/chef.workstation.php/pull/36) ([bastianschwarz](https://github.com/bastianschwarz))
 - Added keyboard layout [\#35](https://github.com/codenamephp/chef.workstation.php/pull/35) ([bastianschwarz](https://github.com/bastianschwarz))
 - Added git client to default recipe [\#34](https://github.com/codenamephp/chef.workstation.php/pull/34) ([bastianschwarz](https://github.com/bastianschwarz))
