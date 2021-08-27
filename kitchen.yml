@@ -20,3 +20,11 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: with-gnome
+    run_list:
+      - recipe[codenamephp_workstation_php]
+      - recipe[codenamephp_workstation_php::gnome]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
