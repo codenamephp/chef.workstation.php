@@ -12,6 +12,7 @@ users yourself.
 
 The workstation is based on git and docker and also installs some other useful tools:
 
+- Sets german keyboard layout, utf-8 de locale and timezone to Europe/Berlin
 - Docker, Docker-Compose and Docker image using codenamephp/php.webdevops.php-dev
 - Git
 - Jetbrains Toolbox for easy PHPStorm install
