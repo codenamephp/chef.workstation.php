@@ -19,6 +19,8 @@
 # limitations under the License.
 
 include_recipe '::keyboard_layout'
+include_recipe '::locale'
+include_recipe '::timezone'
 include_recipe '::git'
 include_recipe '::php'
 include_recipe '::jetbrains_toolbox'
