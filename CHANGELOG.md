@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.3.0](https://github.com/codenamephp/chef.workstation.php/tree/2.3.0) (2021-08-27)
+
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.2.0...2.3.0)
+
+**Implemented enhancements:**
+
+- Added recipe for gnome gui [\#37](https://github.com/codenamephp/chef.workstation.php/pull/37) ([bastianschwarz](https://github.com/bastianschwarz))
+- Added recipes for timezone and locale [\#36](https://github.com/codenamephp/chef.workstation.php/pull/36) ([bastianschwarz](https://github.com/bastianschwarz))
+- Added keyboard layout [\#35](https://github.com/codenamephp/chef.workstation.php/pull/35) ([bastianschwarz](https://github.com/bastianschwarz))
+- Added git client to default recipe [\#34](https://github.com/codenamephp/chef.workstation.php/pull/34) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [2.2.0](https://github.com/codenamephp/chef.workstation.php/tree/2.2.0) (2021-07-18)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.1.0...2.2.0)
