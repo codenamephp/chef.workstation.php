@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.0](https://github.com/codenamephp/chef.workstation.php/tree/2.4.0) (2021-08-28)
+
+[Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.3.0...2.4.0)
+
+**Implemented enhancements:**
+
+- Added users recipes [\#39](https://github.com/codenamephp/chef.workstation.php/pull/39) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [2.3.0](https://github.com/codenamephp/chef.workstation.php/tree/2.3.0) (2021-08-27)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.2.0...2.3.0)
