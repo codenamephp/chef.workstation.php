@@ -14,17 +14,42 @@ platforms:
 
 suites:
   - name: default
+    lifecycle:
+      pre_converge:
+        - remote: |
+            /bin/bash -c "mkdir --parents /var/workspace && \
+            echo -n 'my private key' > /var/workspace/id_rsa && \
+            echo -n 'my public key' > /var/workspace/id_rsa.pub"
     run_list:
-      - recipe[codenamephp_workstation_php]
-    verifier:
-      inspec_tests:
-        - test/integration/default
-    attributes:
-  - name: with-gnome
-    run_list:
+      - recipe[codenamephp_workstation_php::users]
       - recipe[codenamephp_workstation_php]
       - recipe[codenamephp_workstation_php::gnome]
     verifier:
       inspec_tests:
         - test/integration/default
-    attributes:
+        - test/integration/users
+    attributes: {
+      "codenamephp": {
+        "workstation_php": {
+          "git_client": {
+            "php": {
+              "config": {
+                "user.name": "I am php",
+                "user.email": "php@test.de"
+              }
+            }
+          }
+        }
+      }
+    }
+  - name: users-from-data-bag
+    data_bags_path: "test/integration/data_bags"
+    run_list:
+      - recipe[codenamephp_workstation_php::users_from_data_bag]
+      - recipe[codenamephp_workstation_php::default]
+      - recipe[codenamephp_workstation_php::gnome]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+        - test/integration/users_from_data_bag
+    attributes: { users: ["user1", "user3"] }
