@@ -1,0 +1,14 @@
+{
+  "id": "user2",
+  "groups": [
+    "not-php"
+  ],
+  "codenamephp": {
+    "git_client": {
+      "config": {
+        "user.name": "User 2",
+        "user.email": "user2@test.de"
+      }
+    }
+  }
+}
