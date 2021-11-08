@@ -1,11 +1,12 @@
 # Changelog
 
-## [2.4.1](https://github.com/codenamephp/chef.workstation.php/tree/2.4.1) (2021-11-02)
+## [2.4.1](https://github.com/codenamephp/chef.workstation.php/tree/2.4.1) (2021-11-08)
 
 [Full Changelog](https://github.com/codenamephp/chef.workstation.php/compare/2.4.0...2.4.1)
 
 **Merged pull requests:**
 
+- Bump tubone24/update\_release from 1.2.0 to 1.3.1 [\#42](https://github.com/codenamephp/chef.workstation.php/pull/42) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump bobheadxi/deployments from 0.6.0 to 0.6.1 [\#41](https://github.com/codenamephp/chef.workstation.php/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [2.4.0](https://github.com/codenamephp/chef.workstation.php/tree/2.4.0) (2021-08-28)
